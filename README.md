@@ -1,5 +1,5 @@
 # AutoJudge — Programming Problem Difficulty Prediction
-
+---
 ## Project Overview
 AutoJudge predicts the difficulty of a programming problem using only its textual data. 
 
@@ -169,6 +169,7 @@ The interface provides results quickly in an easy to understand format.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
