@@ -84,7 +84,7 @@ The result of this is used as input for all classification and regression models
 
 Support Vector Machine was selected as the final model as it showed better performance
 
----
+
 **Regression Models**
 - Linear Regression (Ridge)
   - Assumes a linear relationship between features and difficulty score
@@ -115,7 +115,7 @@ Linear Regression (Ridge) was selected as the final regression model due to its 
 - Linear SVM model
 Accuracy: 54.07047387606318 %
 - Confusion Matrix:
-         - easy  hard  medium
+ - easy  hard  medium
 - easy      57    53      43
 - hard      16   293      80
 - medium    18   168      95
@@ -148,7 +148,6 @@ The web interface enables users to:
   - A difficulty score (from 1–10)
 The interface provides results quickly in an easy to understand format.
 
----
 ### Web Interface Components
 #### Text Input Area
 - A text box where users enter the problem statement
@@ -170,6 +169,7 @@ The interface provides results quickly in an easy to understand format.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
