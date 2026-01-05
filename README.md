@@ -134,7 +134,7 @@ cd AutoJudge
 ```
 ```
 python -m venv venv
-venv/bin/activate
+venv\Scripts\activate
 ```
 ```
 pip install -r requirements.txt
@@ -174,6 +174,7 @@ The interface provides results quickly in an easy to understand format.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
