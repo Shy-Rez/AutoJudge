@@ -29,12 +29,12 @@ All text fields except the url are then combined in a single text column for fea
 ## Approach and Models Used
 
 ### Data Preprocessing
-Combined all important text fields into a single text input
-Handeled missing values 
-Converted all text to lowercase
-Removed newline and tab characters
-Normalized whitespace
-Saved the cleaned dataset as a csv file to be used by both models
+- Combined all important text fields into a single text input
+- Handeled missing values 
+- Converted all text to lowercase
+- Removed newline and tab characters
+- Normalized whitespace
+- Saved the cleaned dataset as a csv file to be used by both models
 
 ---
 ### Feature Engineering
@@ -172,6 +172,7 @@ The interface is simple and ensures that output is easy to understand.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
