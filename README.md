@@ -115,10 +115,12 @@ Linear Regression (Ridge) was selected as the final regression model due to its 
 - Linear SVM model
 Accuracy: 54.07047387606318 %
 - Confusion Matrix:
- - easy  hard  medium
-- easy      57    53      43
-- hard      16   293      80
-- medium    18   168      95
+```
+         easy  hard  medium
+easy      57    53      43
+hard      16   293      80
+medium    18   168      95
+```
 
 ### Regression
 - Linear Regression model 
@@ -126,17 +128,20 @@ Accuracy: 54.07047387606318 %
  - RMSE: 1.9889106195226198
 ---
 ## Steps to Run the Project
-
-git clone <repository-url>
-cd <project-folder>
-
+```
+git clone https://github.com/Shy-Rez/AutoJudge.git
+cd AutoJudge
+```
+```
 python -m venv venv
 venv/bin/activate
-
+```
+```
 pip install -r requirements.txt
-
+```
+```
 streamlit run app.py
-
+```
 ---
 ## Explanation of the Web Interface
 The web interface predicts the difficulty of programming problem without requiring command-line usage.
@@ -169,6 +174,7 @@ The interface provides results quickly in an easy to understand format.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
