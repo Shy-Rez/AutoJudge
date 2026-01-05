@@ -8,6 +8,7 @@ The model performs two tasks:
 - Regression: Predicts a numerical difficulty score on a scale of 1-10
 
 This helps automatically label a problem by difficulty and recommend similar problems to users.
+
 ---
 ## Dataset Used
 The project uses the provided dataset (problems_data.csv)
@@ -23,6 +24,7 @@ Each sample contains the following fields:
   - url
 
 All text fields except the url are then combined in a single text column for feature extraction
+
 ---
 ## Approach and Models Used
 
@@ -33,6 +35,7 @@ Converted all text to lowercase
 Removed newline and tab characters
 Normalized whitespace
 Saved the cleaned dataset as a csv file to be used by both models
+
 ---
 ### Feature Engineering
 Used the cleaned text column as the primary input for feature extraction
@@ -53,6 +56,7 @@ The data is split into training (80%) and testing (20%) set to maintain class di
   - Standard scaling is applied to numerical features.
 
 The result of this is used as input for all classification and regression models.
+
 ---
 ### Models Used
 
@@ -79,6 +83,7 @@ The result of this is used as input for all classification and regression models
   - Classified a majority of problems as Hard, was the most confused between Easy and Hard class among the three models
 
 Support Vector Machine was selected as the final model as it showed better performance
+
 ---
 **Regression Models**
 - Linear Regression (Ridge)
@@ -103,6 +108,7 @@ Support Vector Machine was selected as the final model as it showed better perfo
   - Required less training time and performed better than Random Forest Regressor
 
 Linear Regression (Ridge) was selected as the final regression model due to its lowest RMSE 
+
 ---
 ## Evaluation Metrics
 ### Classification
@@ -130,6 +136,7 @@ venv/bin/activate
 pip install -r requirements.txt
 
 streamlit run app.py
+
 ---
 ## Explanation of the Web Interface
 The web interface predicts the difficulty of programming problem without requiring command-line usage.
@@ -140,6 +147,7 @@ The web interface enables users to:
   - A difficulty classification (Easy/Medium/Hard)
   - A difficulty score (from 1–10)
 The interface provides results quickly in an easy to understand format.
+
 ---
 ### Web Interface Components
 #### Text Input Area
@@ -156,6 +164,7 @@ The interface provides results quickly in an easy to understand format.
 - Displays the predicted results immediately after submission, the predicted difficulty class and score
 
 The interface is simple and ensures that output is easy to understand.
+
 ---
 ## Link to demo video
 
@@ -163,6 +172,7 @@ The interface is simple and ensures that output is easy to understand.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
