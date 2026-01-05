@@ -43,7 +43,7 @@ Used the cleaned text column as the primary input for feature extraction
 - Additional features (Numerical):
   - Text length (total number of characters)
   - Word count (total number of words)
-  - Normalized Keyword frequencies (graph,dp,greedy,etc)
+  - Normalized keyword counts (graph,dp,greedy,etc)
 
 Combined all numeric features (textLength,wordCount and normailzed keyword frequencies) to a single list
 
@@ -89,23 +89,23 @@ Support Vector Machine was selected as the final model as it showed better perfo
 - Linear Regression (Ridge)
   - Assumes a linear relationship between features and difficulty score
   - Ridge uses L2 regularization, it helps prevent overfitting in TF-IDF vectorization
-  - The regularization parameter is set to alpha= 2.0
+  - The regularization parameter is set to alpha=2.0
   - Achieved an MAE of approximately 1.648
   - Achieved an RMSE of approximately 1.988
 
 - Random Forest Regressor
-  - The model consists of 500 decision trees with maximum tree depth of 5 to control overfitting
-  - This model can be used as a non-linear regression baseline
-  - Achieved an MAE of approximately 1.767
-  - Achieved an RMSE of approximately 2.087
-  - Required approximately 2 minutes to train
+  - The model consists of 600 decision trees
+  - Can be used as a non-linear regression baseline
+  - Achieved an MAE of approximately 1.684
+  - Achieved an RMSE of approximately 2.029
+  - Required approximately 3 minutes to train
 
 - Gradient Boosting Regressor
-  - The model uses 400 decision trees, each tree learns from the errors of previous trees and each tree has a maximum depth of 3 to prevent overfitting
+  - The model uses 300 decision trees, each tree learns from the errors of previous trees and each tree has a maximum depth of 3 to prevent overfitting
   - Learning rate of 0.05 is used to control the contribution of each tree
-  - Achieved an MAE of approximately 1.697
-  - Achieved an RMSE of approximately 2.019
-  - Required less training time and performed better than Random Forest Regressor
+  - Achieved an MAE of approximately 1.694
+  - Achieved an RMSE of approximately 2.024
+  - Required less training time and performed slightly better than Random Forest Regressor
 
 Linear Regression (Ridge) was selected as the final regression model due to its lowest RMSE 
 
@@ -115,10 +115,10 @@ Linear Regression (Ridge) was selected as the final regression model due to its 
 - Linear SVM model
 Accuracy: 54.07047387606318 %
 Confusion Matrix:
-        easy  hard  medium
-easy      57    53      43
-hard      16   293      80
-medium    18   168      95
+-         easy  hard  medium
+- easy      57    53      43
+- hard      16   293      80
+- medium    18   168      95
 
 ### Regression
 - Linear Regression model 
@@ -152,7 +152,7 @@ The interface provides results quickly in an easy to understand format.
 ### Web Interface Components
 #### Text Input Area
 - A text box where users enter the problem statement
-- Accepts full descriptions including input/output format and constraints
+- Accepts full descriptions including title, input/output format and sample input/output
 - Applies the same process used during model training
 
 #### Predict Button
@@ -163,8 +163,6 @@ The interface provides results quickly in an easy to understand format.
 #### Output Display
 - Displays the predicted results immediately after submission, the predicted difficulty class and score
 
-The interface is simple and ensures that output is easy to understand.
-
 ---
 ## Link to demo video
 
@@ -172,6 +170,7 @@ The interface is simple and ensures that output is easy to understand.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
