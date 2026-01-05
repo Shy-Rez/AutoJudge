@@ -114,16 +114,16 @@ Linear Regression (Ridge) was selected as the final regression model due to its 
 ### Classification
 - Linear SVM model
 Accuracy: 54.07047387606318 %
-Confusion Matrix:
--         easy  hard  medium
+- Confusion Matrix:
+         - easy  hard  medium
 - easy      57    53      43
 - hard      16   293      80
 - medium    18   168      95
 
 ### Regression
 - Linear Regression model 
-MAE: 1.6483395076522422
-RMSE: 1.9889106195226198
+ - MAE: 1.6483395076522422
+ - RMSE: 1.9889106195226198
 ---
 ## Steps to Run the Project
 
@@ -170,6 +170,7 @@ The interface provides results quickly in an easy to understand format.
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
