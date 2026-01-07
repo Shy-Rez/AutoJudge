@@ -96,24 +96,24 @@ Support Vector Machine was selected as the final model as it showed better perfo
 - Random Forest Regressor
   - The model consists of 600 decision trees
   - Can be used as a non-linear regression baseline
-  - Achieved an MAE of approximately 1.684
-  - Achieved an RMSE of approximately 2.029
+  - Achieved an MAE of approximately 1.726
+  - Achieved an RMSE of approximately 2.053
   - Required approximately 3 minutes to train
 
 - Gradient Boosting Regressor
   - The model uses 300 decision trees, each tree learns from the errors of previous trees and each tree has a maximum depth of 3 to prevent overfitting
-  - Learning rate of 0.05 is used to control the contribution of each tree
+  - Learning rate of 0.1 is used to control the contribution of each tree
   - Achieved an MAE of approximately 1.694
   - Achieved an RMSE of approximately 2.024
   - Required less training time and performed slightly better than Random Forest Regressor
 
-Linear Regression (Ridge) was selected as the final regression model due to its lowest RMSE 
+Linear Regression (Ridge) was selected as the final regression model due to its lowest MAE & RMSE 
 
 ---
 ## Evaluation Metrics
 ### Classification
 - Linear SVM model
-Accuracy: 54.07047387606318 %
+- Accuracy: 54.07047387606318 %
 - Confusion Matrix:
 ```
          easy  hard  medium
@@ -157,7 +157,6 @@ The interface provides results quickly in an easy to understand format.
 #### Text Input Area
 - A text box where users enter the problem statement
 - Accepts full descriptions including title, input/output format and sample input/output
-- Applies the same process used during model training
 
 #### Predict Button
 - Sends the processed input to:
@@ -175,6 +174,7 @@ https://drive.google.com/file/d/1YTjJyGRxSFhphIDcsXUXjz5ip7qPCSdP/view?usp=shari
 ## Details
 - Name: Shreyas Dangi
 - Enrollment Number: 24113121
+
 
 
 
